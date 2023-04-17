@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Meeting Minutes</title>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/media/cat.jpg">
+  </head>
+  <body>
+    <header>
+        <div>Meeting Minutes</div>
+        <nav>
+            <ul>
+                <li><a href="#attendance">Attendance List</a></li>
+                <li><a href="#agenda">Meeting Agenda</a></li>
+                <li><a href="#notes">Meeting Notes</a></li>
+                <li><a href="#audiovideo">Audio & Video Recordings</a></li>
+                <li><a href="#pictures">Pictures from the Meeting</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1>CSE 110 Meeting Minutes</h1>
+            <h2>4/15/2023</h2>
+            <img src="images/cat.jpg" alt="very cool guy :)" width="250">
+
+            <h2 id="attendance">Attendance List</h2>
+            <ol>
+                <li><input type="checkbox">Alvaro</li>
+                <li><input type="checkbox">Brandon</li>
+                <li><input type="checkbox" checked>Cody</li>
+                <li><input type="checkbox">Ishan</li>
+                <li><input type="checkbox">Jackie</li>
+                <li><input type="checkbox">Jenny</li>
+                <li><input type="checkbox">Jason</li>
+                <li><input type="checkbox">Steve</li>
+                <li><input type="checkbox">Terry</li>
+                <li><input type="checkbox">Wesley</li>
+            </ol>
+
+            <hr>
+        </section>
+
+        <section>
+            <details>
+                <summary id="agenda">Meeting Agenda</h2></summary>
+                <ol>
+                    <li>Introductions</li>
+                    <li>Unfinished Business</li>
+                    <li>New Business</li>
+                    <li>Comments/Questions/Concerns</li>
+                </ol>
+            </details>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2 id="notes">Meeting Notes</h2>
+            <h3>Introductions:</h3>
+            <p>
+                Everyone introduced themselves, and we did some brief <span class="events">icebreakers</span>. 
+                Cody was unanimously decided as the coolest person on his team, and everyone clapped when he introduced himself*.
+            </p>
+
+
+            <h6>*(Cody was the only person to show up)</h6>
+        </section>
+
+        <section>
+            <h3>Unfinished Business</h3>
+            <p>
+                Last meeting, we designed & brainstormed the project. At the start of this meeting, we reminded each other of our great 
+                brainstorming session, and pledged to build upon this design by brainstorming <i>more</i>.
+            </p>
+        </section>
+
+        <section>
+            <h3>New Business</h3>
+            <p>
+                We have to finish the project by <b>August 11, 2080</b>, just in time for Cody's 63rd birthday party.
+                <strong>IMPORTANT: Don't forget to remember the things you forgot from last week for next week<strong>.
+                <br>
+                Something to consider for future meetings: <em>Raw HTML is not the ideal note-taking language.</em>
+            </p>
+        </section>
+
+        <section>
+            <h3>Favorite Number</h3>
+            <p>This is very important, as it will determine who can stay on the team. There is only one right answer; anyone who chooses anything else will be ghosted and banned from the Slack.</p>
+            <label for="numbers">Choose a number:</label>
+            <input list="numbers" id="numberlist" name="numberlist">
+
+            <datalist id="numbers">
+                <option value="1">
+                <option value="2">
+                <option value="-55385638563875638">
+            </datalist>
+        </section>
+
+        <section>
+            <h3>Here is another form for demographic purposes</h3>
+            <label for="favoriteicecream">Choose a flavor:</label>
+            <select name="icecreamselector" id="favoriteicecream">
+                <option value="">Choose an ice cream flavor</option>
+                <option value="chocolate">Chocolate</option>
+                <option value="coconut">Coconut</option>
+                <option value="mint">Mint</option>
+                <option value="strawberry">Strawberry</option>
+                <option value="vanilla">Vanilla</option>
+            </select>
+        </section>
+
+        <section>
+            <h3>Comments/Questions/Concerns</h3>
+            <p>
+                If you have any comments, questions, or concerns about this meeting, please choose which one you have and then feel free to elaborate:
+            </p>
+            <form>
+                <fieldset>
+                    <legend>Indicate input type, and date</legend>
+
+                    <input type="radio" id="comment" name="input">
+                    <label for="comment">Comment</label>
+
+                    <input type="radio" id="question" name="input">
+                    <label for="question">Question</label>
+
+                    <input type="radio" id="concern" name="input">
+                    <label for="concern">Concern</label>
+
+                    <br>
+                    <br>
+
+                    <label for="inputdate">When did you have these thoughts:</label>
+                    <br>
+                    <input type="date" id="inputdate">
+
+                    <br>
+                    <br>
+
+                    <label for="concernsbox">Why did you have these thoughts:</label>
+                    <br>
+                    <textarea name="concernsbox" id="concernsbox" cols="30" rows="10"></textarea>
+                </fieldset>
+            </form>
+        </section>
+
+        <section>
+            <h3 id="audiovideo">Audio & Video Recordings (real footage *genuine* [must watch])</h3>
+            <figcaption>Meeting Audio</figcaption>
+            <audio controls src="media/audio recording.mp3"></audio>
+
+            <figcaption>Meeting Video</figcaption>
+            <video controls src="media/video recording.mp4"></video>
+        </section>
+
+        <section>
+            <h3 id="pictures">Meeting Pictures</h3>
+            <img src="media/bisnis.jfif" alt="Very serious business meeting, super productive" width="250">
+            <img src="media/maf.jfif" alt="Solving a hard CSE 110 related problem" width="250">
+            <img src="media/stonk.jfif" alt="Analysis of CSE 110 stocks (they are good)" width="250">
+        </section>
+    </main>
+
+    <hr>
+
+    <footer>
+        <h4>Subscribe for More Awesome Meeting Notes</h4>
+        <form onsubmit="alert('Subscribed')">
+            <input type="text" placeholder="Enter Email Address (I am going to sell your data)" size="42">
+            <button>Submit</button>
+        </form>
+        <br>
+        <div>&copy; CSE 110 Team 28 (a.k.a. Amazon 2)</div>
+    </footer>
+  </body>
+</html>
