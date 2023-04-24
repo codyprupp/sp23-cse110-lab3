@@ -48,7 +48,7 @@
             <hr>
         </section>
 
-        <section>
+        <section class="list1">
             <h3 id="agenda">Meeting Agenda</h3>
             <details>
                 <summary>(Click to expand Agenda)</summary>
@@ -64,7 +64,7 @@
         <hr>
 
         <section>
-            <h2 id="notes">Meeting Notes</h2>
+            <h2 id="notes" class="list2">Meeting Notes</h2>
             <h3>Introductions:</h3>
             <p>
                 Everyone introduced themselves, and we did some brief <span class="events">icebreakers</span>. 
@@ -134,7 +134,7 @@
                 If you have any comments, questions, or concerns about this meeting, please choose which one you have and then feel free to elaborate:
             </p>
             <form>
-                <fieldset>
+                <fieldset class="specialText">
                     <legend>Indicate input type, and date</legend>
 
                     <input type="radio" id="comment" name="input">
@@ -161,6 +161,18 @@
                     <textarea name="concernsbox" id="concernsbox" cols="30" rows="10"></textarea>
                 </fieldset>
             </form>
+
+            <div class="grid-container">
+                <div class="grid-item">1</div>
+                <div class="grid-item">2</div>
+                <div class="grid-item">3</div>  
+                <div class="grid-item">4</div>
+                <div class="grid-item">5</div>
+                <div class="grid-item">6</div>  
+                <div class="grid-item">7</div>
+                <div class="grid-item">8</div>
+                <div class="grid-item">9</div>  
+              </div>
         </section>
 
         <section>
@@ -174,9 +186,15 @@
 
         <section>
             <h3 id="pictures">Meeting Pictures</h3>
-            <img src="media/bisnis.jfif" alt="Very serious business meeting, super productive" width="250">
+            <img class="picture" src="media/bisnis.jfif" alt="Very serious business meeting, super productive" width="250">
             <img src="media/maf.jfif" alt="Solving a hard CSE 110 related problem" width="250">
             <img src="media/stonk.jfif" alt="Analysis of CSE 110 stocks (they are good)" width="250">
+
+            <div class="flex-container">
+                <div>child 1</div>
+                <div>child 2</div>
+                <div>child 3</div>
+            </div>
         </section>
     </main>
 
@@ -184,7 +202,7 @@
 
     <footer>
         <h4 class="tall">Subscribe for More Awesome Meeting Notes</h4>
-        <form onsubmit="alert('Subscribed')">
+        <form onsubmit="alert('Subscribed')" class="subscribeButton">
             <input type="text" placeholder="Enter Email Address (I am going to sell your data)" size="42">
             <button>Submit</button>
         </form>
