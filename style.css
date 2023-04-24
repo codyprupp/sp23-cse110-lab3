@@ -26,3 +26,16 @@ h2 {
 h3 {
     font-size: 25px;
 }
+
+.important {
+    text-indent: 50vw;
+}
+
+.tall {
+    font-size: 5lh;
+}
+
+.caption {
+    text-decoration: overline;
+    text-align: justify;
+}
