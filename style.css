@@ -1,5 +1,9 @@
 /* My graphic design skills are impeccable */
 
+* {
+    perspective: 2in;
+}
+
 header {
     background-color: aqua;
     margin: auto;
@@ -39,6 +43,10 @@ h1 {
     text-transform: uppercase;
 }
 
+h2[id="notes"] {
+    font-size: 20pc;
+}
+
 h2 {
     font-size: 3pc;
 }
@@ -47,9 +55,11 @@ h3 {
     font-size: 25px;
 }
 
-.important {
+.important, .caption {
     text-indent: 50vw;
     margin: 50px 60px 70px 80px;
+    text-decoration: overline;
+    text-align: justify;
 }
 
 .tall {
@@ -60,12 +70,7 @@ h3 {
     margin-right: 10px;
 }
 
-.caption {
-    text-decoration: overline;
-    text-align: justify;
-}
-
-.list1 {
+.list1 li {
     display: block;
 }
 
@@ -73,7 +78,7 @@ h3 {
     display: none;
 }
 
-.picture {
+.picture + img {
     height: auto;
     width: auto;
     max-width: fit-content;
@@ -106,13 +111,14 @@ h3 {
     font-size: 30px;
 }
 
-.grid-container {
+.grid-container ~ .grid-item {
     display: grid;
     grid-template-columns: auto auto auto;
     background-color: red;
     padding: 10px;
   }
-  .grid-item {
+
+.grid-item {
     background-color: black;
     border: 1px transparent white;
     padding: 20px;
@@ -122,7 +128,16 @@ h3 {
     grid-column: 2;
     grid-template-rows: max-content;
     grid-row-end: span;
-  }
-  .grid-item:hover {
+}
+
+.grid-item:hover {
     box-shadow: 20px 20px 20px white;
-  }
+}
+
+#attendance {
+    color: purple;
+}
+
+section > h3[id="agenda"] {
+    color: brown;
+}
