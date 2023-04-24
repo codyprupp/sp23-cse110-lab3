@@ -1,3 +1,3 @@
-# Lab 2 - Starter
+# Lab 3
 
-[Link to Part 1 Published Website](https://codyprupp.github.io/Lab2_Starter/)
+[Link to published site](https://codyprupp.github.io/sp23-cse110-lab3/)
