@@ -2,20 +2,20 @@
 
 ---
 
-## What did I work on yesterday?
+## What did each member work on yesterday?
 
-- 
-
----
-
-## What am I working on today?
-
-- 
+- (list everyone's completed tasks from the prior day/meeting)
 
 ---
 
-## What issues are blocking me?
+## What are we working on today?
 
-- 
+- (list each current task)
+
+---
+
+## What issues are blocking us / what needs to be addressed?
+
+- (insert future issues list here)
 
 ---
