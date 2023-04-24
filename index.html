@@ -4,6 +4,12 @@
     <title>Meeting Minutes</title>
     <meta charset="UTF-8">
     <link rel="icon" href="media/cat.jpg">
+
+    <!-- Imported Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
@@ -42,7 +48,7 @@
             <hr>
         </section>
 
-        <section>
+        <section class="list1">
             <h3 id="agenda">Meeting Agenda</h3>
             <details>
                 <summary>(Click to expand Agenda)</summary>
@@ -58,7 +64,7 @@
         <hr>
 
         <section>
-            <h2 id="notes">Meeting Notes</h2>
+            <h2 id="notes" class="list2">Meeting Notes</h2>
             <h3>Introductions:</h3>
             <p>
                 Everyone introduced themselves, and we did some brief <span class="events">icebreakers</span>. 
@@ -66,7 +72,7 @@
             </p>
 
 
-            <h6>*(Cody was the only person to show up)</h6>
+            <h6 class="important">*(Cody was the only person to show up)</h6>
         </section>
 
         <section>
@@ -80,7 +86,7 @@
         <section>
             <style>
                 h3 {
-                    font-family: sans-serif;
+                    font-family: 'Bruno Ace', cursive;
                 }
 
                 p {
@@ -128,7 +134,7 @@
                 If you have any comments, questions, or concerns about this meeting, please choose which one you have and then feel free to elaborate:
             </p>
             <form>
-                <fieldset>
+                <fieldset class="specialText">
                     <legend>Indicate input type, and date</legend>
 
                     <input type="radio" id="comment" name="input">
@@ -155,10 +161,22 @@
                     <textarea name="concernsbox" id="concernsbox" cols="30" rows="10"></textarea>
                 </fieldset>
             </form>
+
+            <div class="grid-container">
+                <div class="grid-item">1</div>
+                <div class="grid-item">2</div>
+                <div class="grid-item">3</div>  
+                <div class="grid-item">4</div>
+                <div class="grid-item">5</div>
+                <div class="grid-item">6</div>  
+                <div class="grid-item">7</div>
+                <div class="grid-item">8</div>
+                <div class="grid-item">9</div>  
+              </div>
         </section>
 
         <section>
-            <h3 id="audiovideo">Audio & Video Recordings (real footage *genuine* [must watch])</h3>
+            <h3 id="audiovideo" class="caption">Audio & Video Recordings (real footage *genuine* [must watch])</h3>
             <h4>Meeting Audio</h4>
             <audio controls src="media/audiorecording.mp3"></audio>
 
@@ -168,17 +186,23 @@
 
         <section>
             <h3 id="pictures">Meeting Pictures</h3>
-            <img src="media/bisnis.jfif" alt="Very serious business meeting, super productive" width="250">
+            <img class="picture" src="media/bisnis.jfif" alt="Very serious business meeting, super productive" width="250">
             <img src="media/maf.jfif" alt="Solving a hard CSE 110 related problem" width="250">
             <img src="media/stonk.jfif" alt="Analysis of CSE 110 stocks (they are good)" width="250">
+
+            <div class="flex-container">
+                <div>child 1</div>
+                <div>child 2</div>
+                <div>child 3</div>
+            </div>
         </section>
     </main>
 
     <hr>
 
     <footer>
-        <h4>Subscribe for More Awesome Meeting Notes</h4>
-        <form onsubmit="alert('Subscribed')">
+        <h4 class="tall">Subscribe for More Awesome Meeting Notes</h4>
+        <form onsubmit="alert('Subscribed')" class="subscribeButton">
             <input type="text" placeholder="Enter Email Address (I am going to sell your data)" size="42">
             <button>Submit</button>
         </form>

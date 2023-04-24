@@ -2,9 +2,26 @@
 
 header {
     background-color: aqua;
+    margin: auto;
+    padding-left: 0.5in;
+    padding-right: 0.5in;
+    padding-top: 0.5in;
+    padding-bottom: 0.5in;
+
+    border-radius: 25%;
+    border-color: black;
+    border-width: 10px;
+    border-style: solid;
+
+    position: sticky;
+}
+
+.specialText:hover {
+    box-shadow: 10px 10px 10px red;
 }
 
 main {
+    padding: 1in 1in 1in 1in;
     color: #FF0000;
     background-color: rgb(100, 100, 100);
 }
@@ -12,6 +29,9 @@ main {
 footer {
     background-color: rgba(255, 0, 255);
     color: hsl(100, 100%, 50%);
+
+    border: 25px solid papayawhip;
+    position: absolute;
 }
 
 h1 {
@@ -26,3 +46,83 @@ h2 {
 h3 {
     font-size: 25px;
 }
+
+.important {
+    text-indent: 50vw;
+    margin: 50px 60px 70px 80px;
+}
+
+.tall {
+    font-size: 5lh;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.caption {
+    text-decoration: overline;
+    text-align: justify;
+}
+
+.list1 {
+    display: block;
+}
+
+.list2 {
+    display: none;
+}
+
+.picture {
+    height: auto;
+    width: auto;
+    max-width: fit-content;
+    min-width: none;
+}
+
+.subscribeButton:active {
+    box-shadow: 2px 2px 5px green;
+}
+
+@media (max-width: 1000px) {
+    header:hover {
+        box-shadow:100px 100px 100px hsl(100, 100%, 50%);
+    }
+}
+
+.flex-container {
+    display: flex;
+    background-color: DodgerBlue;
+    
+    flex-direction: row-reverse;
+    flex-wrap: wrap-reverse;
+    flex-grow: inherit;
+}
+
+.flex-container > div {
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: red;
+    padding: 10px;
+  }
+  .grid-item {
+    background-color: black;
+    border: 1px transparent white;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+
+    grid-column: 2;
+    grid-template-rows: max-content;
+    grid-row-end: span;
+  }
+  .grid-item:hover {
+    box-shadow: 20px 20px 20px white;
+  }
